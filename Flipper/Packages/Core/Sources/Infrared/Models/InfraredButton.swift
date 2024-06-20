@@ -25,8 +25,7 @@ public struct InfraredButton: Decodable, Equatable, Identifiable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.position = try container.decode(
             InfraredButtonPosition.self,
-            forKey: .position
-        )
+            forKey: .position)
         self.data = try Self.getInfraredButtonData(container: container)
     }
 
@@ -35,13 +34,12 @@ public struct InfraredButton: Decodable, Equatable, Identifiable {
     ) throws -> InfraredButtonData {
         let dataContainer = try container.nestedContainer(
             keyedBy: CodingKeys.self,
-            forKey: .data
-        )
+            forKey: .data)
 
         guard let type = try? dataContainer.decode(
             InfraredButtonDataType.self,
-            forKey: .type
-        ) else { return .unknown }
+            forKey: .type)
+        else { return .unknown }
 
         switch type {
         case .text:
@@ -53,21 +51,51 @@ public struct InfraredButton: Decodable, Equatable, Identifiable {
         case .base64Image:
             let data = try container.decode(
                 Base64ImageButtonData.self,
-                forKey: .data
-            )
+                forKey: .data)
             return .base64Image(data)
         case .navigation:
             let data = try container.decode(
                 NavigationButtonData.self,
-                forKey: .data
-            )
+                forKey: .data)
             return .navigation(data)
         case .channel:
-            let data = try container.decode(ChannelButtonData.self, forKey: .data)
+            let data = try container.decode(
+                ChannelButtonData.self,
+                forKey: .data)
             return .channel(data)
         case .volume:
-            let data = try container.decode(VolumeButtonData.self, forKey: .data)
+            let data = try container.decode(
+                VolumeButtonData.self,
+                forKey: .data)
             return .volume(data)
         }
+    }
+}
+
+public extension InfraredButton {
+    var containerWidth: Double {
+        Double(position.containerWidth ?? data.containerDefaultWidth)
+    }
+
+    var containerHeight: Double {
+        Double(position.containerHeight ?? data.containerDefaultHeight)
+    }
+
+    var x: Double { Double(position.x) }
+
+    var y: Double { Double(position.y) }
+
+    var zIndex: Double { position.zIndex ?? 1.0 }
+
+    var contentWidth: Double {
+        Double(position.contentWidth ?? data.contentDefaultWidth)
+    }
+
+    var contentHeight: Double {
+        Double(position.containerHeight ?? data.contentDefaultHeight)
+    }
+
+    var alignment: InfraredButtonPosition.Alignment {
+        position.alignment ?? .center
     }
 }

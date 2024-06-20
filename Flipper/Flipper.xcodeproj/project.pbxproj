@@ -23,7 +23,7 @@
 		8B1A482229C113A5000169E9 /* ActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A482129C113A5000169E9 /* ActivityWidget.swift */; };
 		8B1A482729C113A6000169E9 /* ActivityWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A482329C113A5000169E9 /* ActivityWidget.intentdefinition */; };
 		8B1A482829C113A6000169E9 /* ActivityWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A482329C113A5000169E9 /* ActivityWidget.intentdefinition */; };
-		8B1A482B29C113A6000169E9 /* ActivityWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8B1A481729C113A5000169E9 /* ActivityWidget.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B1A482B29C113A6000169E9 /* ActivityWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8B1A481729C113A5000169E9 /* ActivityWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8B1BB6D429C1E67B008AE2A0 /* HaxrCorpNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BCE39EA289D47EA00FB5704 /* HaxrCorpNeue.ttf */; };
 		8B1BB6D529C1E67B008AE2A0 /* Born2bSportyV2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B7480DD2807483500692304 /* Born2bSportyV2.ttf */; };
 		8B5B6C152B13FDAD00B76D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5B6C142B13FDAD00B76D83 /* AppDelegate.swift */; };
@@ -53,7 +53,7 @@
 		8BF8025C2B0C14670083DF49 /* Notifications in Frameworks */ = {isa = PBXBuildFile; productRef = 8BF8025B2B0C14670083DF49 /* Notifications */; };
 		8BF9CECA28E21A4400CD5D31 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF9CEC928E21A4400CD5D31 /* NotificationCenter.framework */; };
 		8BF9CECD28E21A4400CD5D31 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9CECC28E21A4400CD5D31 /* TodayViewController.swift */; };
-		8BF9CED428E21A4400CD5D31 /* TodayWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8BF9CEC828E21A4400CD5D31 /* TodayWidget.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8BF9CED428E21A4400CD5D31 /* TodayWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8BF9CEC828E21A4400CD5D31 /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F0DBFA4324EF2F9900EB2880 /* FlipperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DBFA1A24EF2F9600EB2880 /* FlipperApp.swift */; };
 		F0DBFA4724EF2F9900EB2880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DBFA1C24EF2F9900EB2880 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -644,7 +644,6 @@
 /* Begin PBXTargetDependency section */
 		8B1A482A29C113A6000169E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilter = ios;
 			target = 8B1A481629C113A5000169E9 /* ActivityWidget */;
 			targetProxy = 8B1A482929C113A6000169E9 /* PBXContainerItemProxy */;
 		};
@@ -656,7 +655,6 @@
 		};
 		8BF9CED328E21A4400CD5D31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilter = ios;
 			target = 8BF9CEC728E21A4400CD5D31 /* TodayWidget */;
 			targetProxy = 8BF9CED228E21A4400CD5D31 /* PBXContainerItemProxy */;
 		};
@@ -1002,7 +1000,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,6";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				_EXPERIMENTAL_SWIFT_EXPLICIT_MODULES = YES;
 			};
 			name = Debug;
@@ -1032,7 +1030,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,6";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

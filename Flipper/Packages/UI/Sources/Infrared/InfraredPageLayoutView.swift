@@ -10,11 +10,12 @@ struct InfraredPageLayoutView: View {
             ZStack {
                 ForEach(page.buttons) { button in
                     InfraredButtonView(
+                        cellLenght: calculateCellLenght(geometry.size),
                         button: button,
                         onTap: onTap
                     )
                     .cellModifier(
-                        position: button.position,
+                        button: button,
                         screenSize: geometry.size
                     )
                 }
@@ -28,24 +29,56 @@ fileprivate extension View {
     var widthCount: Double { 5.0 }
     var heightCount: Double { 11.0 }
 
+    var cellHeightCoefficient: Double { 12 }
+    var cellWidthCoefficient: Double { 6 }
+
     @ViewBuilder
-    func cellModifier(
-        position: InfraredButtonPosition,
-        screenSize: CGSize
-    ) -> some View {
-        let xDelayPosition = (position.x + position.containerWidth / 2)
-        let yDelayPosition = (position.y + position.containerHeight / 2)
+    func cellModifier(button: InfraredButton, screenSize: CGSize) -> some View {
+        let xCenter = button.x + button.containerWidth / 2
+        let yCenter = button.y + button.containerHeight / 2
 
-        let width = screenSize.width * position.containerWidth / widthCount
-        let height = screenSize.height * position.containerHeight / heightCount
+        let widthFactor = screenSize.width / widthCount
+        let heightFactor = screenSize.height / heightCount
 
-        let x = screenSize.width * xDelayPosition / widthCount
-        let y = screenSize.height * yDelayPosition / heightCount
+        let cellWidth = widthFactor * button.containerWidth
+        let cellHeight = heightFactor * button.containerHeight
 
-        self
-            .frame(width: width, height: height)
-            .position(x: x, y: y)
-            .zIndex(position.zIndex)
+        let cellX = screenSize.width * xCenter / widthCount
+        let cellY = screenSize.height * yCenter / heightCount
+        let cellAlignment = button.cellAlignment
+        print(button.position.alignment)
+
+        return self
+            .frame(
+                width: cellWidth,
+                height: cellHeight,
+                alignment: cellAlignment
+            )
+            .position(x: cellX, y: cellY)
+            .zIndex(button.zIndex)
+    }
+
+    func calculateCellLenght(
+        _ screenSize: CGSize
+    ) -> Double {
+        let cellWidth = screenSize.width / cellWidthCoefficient
+        let cellHeight = screenSize.height / cellHeightCoefficient
+
+        return min(cellWidth, cellHeight)
+    }
+}
+
+extension InfraredButton {
+    public var cellAlignment: SwiftUI.Alignment {
+        switch self.alignment {
+        case .center: .center
+        case .topLeft: .topLeading
+        case .topRight: .topTrailing
+        case .bottomLeft: .bottomLeading
+        case .bottomRight: .bottomTrailing
+        case .centerLeft: .center
+        case .centerRight: .center
+        }
     }
 }
 

@@ -34,7 +34,6 @@ struct NavigationInfraredButton: View {
                         Image("InfraredNavigation")
                             .rotationEffect(Angle(degrees: 90))
                     }
-                    GridRow {}
                     GridRow {
                         Spacer()
                         Image("InfraredNavigation")

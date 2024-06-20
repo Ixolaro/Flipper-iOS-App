@@ -42,11 +42,11 @@ public struct IconButtonData: Decodable, Equatable {
 
 public struct Base64ImageButtonData: Decodable, Equatable {
     public let keyId: KeyID
-    public let base64Image: String
+    public let pngBase64: String
 
     enum CodingKeys: String, CodingKey {
         case keyId = "key_id"
-        case base64Image = "base64_image"
+        case pngBase64 = "png_base64"
     }
 }
 

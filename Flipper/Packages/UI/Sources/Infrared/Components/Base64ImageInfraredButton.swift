@@ -6,7 +6,7 @@ struct Base64ImageInfraredButton: View {
 
     private var uiImage: UIImage? {
         let image = data
-            .base64Image
+            .pngBase64
             .replacing("data:image/png;base64,", with: "")
 
         guard

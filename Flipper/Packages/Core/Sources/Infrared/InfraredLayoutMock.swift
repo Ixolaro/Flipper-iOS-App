@@ -39,12 +39,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 0.0,
-                    x: 1.0,
-                    alignment: .center,
-                    zIndex: 10.0,
-                    containerWidth: 2.0,
-                    containerHeight: 1.0
+                    y: 0,
+                    x: 1,
+                    alignment: .bottomLeft,
+                    zIndex: 10,
+                    containerWidth: 2,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -59,12 +59,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 0.0,
-                    x: 0.0,
+                    y: 0,
+                    x: 0,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -79,12 +79,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 0.0,
-                    x: 2.0,
+                    y: 0,
+                    x: 2,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -95,16 +95,16 @@ extension InfraredPageLayout {
                             keyName: "power",
                             sha256String: "60d18bb96f05eee3bde60a0c3f87b13f74b0c4d3d934d659ef7738f415881740"
                         ),
-                        base64Image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAACYktHRAD/h4/MvwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gGBwkJFOCdqu0AAAH5SURBVEjHxdVPSBRhGMfxz65jEJYG2haFVJQQ5KGCIiqITl26RHWQpEsJ/QFFwkuQRJc6dOnSoWNkRnSoU5cuHrI/XiMqlQI7FOuGmrAq604HIXdnZ3b3VM97mXmfZ748v9887wz/O1J17oX1ArYZ0BpTN+mebBwgiNx3uixnpgwc2my9HfpM15Z00oIrWmVK1kYPhEJDcb0FMZBZuchO3i+vnEVvNBcHSMXsLLpl0kAlIg4Qb/a8QVwT6itF1Ato1CHwxE7nhPpX7awPUNDqqYJQI7p9cyMJkIoFDFvQKCWNJl12SSvGAwpYrgCMGft7vdFxJZOZrijtM1JVTrq8y9IOjjohtOxSgpCUKQ+jpyIoSfc4X8PMrJHoOJcCAoSy5q3T5ocGzeZk/JS1wVZpKQ1RZqWJ13221gWPLLrquYsGrbHbTS1xTVXOwbQeH70wI+e9rJe2uG1RU5Kn0QgNGbVfkwPeYl67N/rN1Aso2uOObksOmTSnwzvjpizFA4IK4CkHdco77Zi8tDPyJnRprvGGpD0W1lg5ndqMG16dlNUOiiZkFRWlEgfpq9lorlTCXUMCLeYUEgC/fbepupC9RhypWpHxJV7CSrQ7bJ9Pid+Jokx5LqgoSBvUm+DCyhPbjSYDPrivrbpKrz1bPZP1/trKI6xZ8Q/jD2AukeSMMfJ/AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA2LTA3VDA5OjA5OjExKzAwOjAwIUUsnAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNi0wN1QwOTowOToxMSswMDowMFAYlCAAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDYtMDdUMDk6MDk6MjArMDA6MDAv9bmoAAAAAElFTkSuQmCC"
+                        pngBase64: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAACYktHRAD/h4/MvwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gGBwkJFOCdqu0AAAH5SURBVEjHxdVPSBRhGMfxz65jEJYG2haFVJQQ5KGCIiqITl26RHWQpEsJ/QFFwkuQRJc6dOnSoWNkRnSoU5cuHrI/XiMqlQI7FOuGmrAq604HIXdnZ3b3VM97mXmfZ748v9887wz/O1J17oX1ArYZ0BpTN+mebBwgiNx3uixnpgwc2my9HfpM15Z00oIrWmVK1kYPhEJDcb0FMZBZuchO3i+vnEVvNBcHSMXsLLpl0kAlIg4Qb/a8QVwT6itF1Ato1CHwxE7nhPpX7awPUNDqqYJQI7p9cyMJkIoFDFvQKCWNJl12SSvGAwpYrgCMGft7vdFxJZOZrijtM1JVTrq8y9IOjjohtOxSgpCUKQ+jpyIoSfc4X8PMrJHoOJcCAoSy5q3T5ocGzeZk/JS1wVZpKQ1RZqWJ13221gWPLLrquYsGrbHbTS1xTVXOwbQeH70wI+e9rJe2uG1RU5Kn0QgNGbVfkwPeYl67N/rN1Aso2uOObksOmTSnwzvjpizFA4IK4CkHdco77Zi8tDPyJnRprvGGpD0W1lg5ndqMG16dlNUOiiZkFRWlEgfpq9lorlTCXUMCLeYUEgC/fbepupC9RhypWpHxJV7CSrQ7bJ9Pid+Jokx5LqgoSBvUm+DCyhPbjSYDPrivrbpKrz1bPZP1/trKI6xZ8Q/jD2AukeSMMfJ/AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA2LTA3VDA5OjA5OjExKzAwOjAwIUUsnAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNi0wN1QwOTowOToxMSswMDowMFAYlCAAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDYtMDdUMDk6MDk6MjArMDA6MDAv9bmoAAAAAElFTkSuQmCC"
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 2.0,
-                    x: 0.0,
+                    y: 2,
+                    x: 0,
                     alignment: .center,
-                    zIndex: 10.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 10,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -119,12 +119,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 0.0,
-                    x: 4.0,
+                    y: 0,
+                    x: 4,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -139,12 +139,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 1.0,
-                    x: 0.0,
+                    y: 1,
+                    x: 0,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -159,12 +159,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 1.0,
-                    x: 1.0,
+                    y: 1,
+                    x: 1,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -179,12 +179,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 1.0,
-                    x: 3.0,
+                    y: 1,
+                    x: 3,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -199,12 +199,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 1.0,
-                    x: 4.0,
+                    y: 1,
+                    x: 4,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -238,12 +238,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 3.0,
-                    x: 1.0,
+                    y: 3,
+                    x: 1,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 3.0,
-                    containerHeight: 3.0
+                    zIndex: 1,
+                    containerWidth: 3,
+                    containerHeight: 3
                 )
             ),
             InfraredButton(
@@ -262,12 +262,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 7.0,
-                    x: 0.0,
+                    y: 7,
+                    x: 0,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 3.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 3
                 )
             ),
             InfraredButton(
@@ -286,12 +286,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 7.0,
-                    x: 4.0,
+                    y: 7,
+                    x: 4,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 3.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 3
                 )
             ),
             InfraredButton(
@@ -306,12 +306,12 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 10.0,
-                    x: 0.0,
+                    y: 10,
+                    x: 0,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             ),
             InfraredButton(
@@ -326,16 +326,17 @@ extension InfraredPageLayout {
                     )
                 ),
                 position: InfraredButtonPosition(
-                    y: 10.0,
-                    x: 4.0,
+                    y: 10,
+                    x: 4,
                     alignment: .center,
-                    zIndex: 1.0,
-                    containerWidth: 1.0,
-                    containerHeight: 1.0
+                    zIndex: 1,
+                    containerWidth: 1,
+                    containerHeight: 1
                 )
             )
         ]
     )
+
 }
 
 extension Data {
@@ -358,7 +359,7 @@ extension Data {
                         "position": {
                             "y": 0.0,
                             "x": 1.0,
-                            "alignment": "CENTER",
+                            "alignment": "BOTTOM_LEFT",
                             "z_index": 10.0,
                             "container_width": 2.0,
                             "container_height": 1.0
@@ -409,7 +410,7 @@ extension Data {
                                 "key_name": "power",
                                 "sha_256_string": "60d18bb96f05eee3bde60a0c3f87b13f74b0c4d3d934d659ef7738f415881740"
                             },
-                            "base64_image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAACYktHRAD/h4/MvwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gGBwkJFOCdqu0AAAH5SURBVEjHxdVPSBRhGMfxz65jEJYG2haFVJQQ5KGCIiqITl26RHWQpEsJ/QFFwkuQRJc6dOnSoWNkRnSoU5cuHrI/XiMqlQI7FOuGmrAq604HIXdnZ3b3VM97mXmfZ748v9887wz/O1J17oX1ArYZ0BpTN+mebBwgiNx3uixnpgwc2my9HfpM15Z00oIrWmVK1kYPhEJDcb0FMZBZuchO3i+vnEVvNBcHSMXsLLpl0kAlIg4Qb/a8QVwT6itF1Ato1CHwxE7nhPpX7awPUNDqqYJQI7p9cyMJkIoFDFvQKCWNJl12SSvGAwpYrgCMGft7vdFxJZOZrijtM1JVTrq8y9IOjjohtOxSgpCUKQ+jpyIoSfc4X8PMrJHoOJcCAoSy5q3T5ocGzeZk/JS1wVZpKQ1RZqWJ13221gWPLLrquYsGrbHbTS1xTVXOwbQeH70wI+e9rJe2uG1RU5Kn0QgNGbVfkwPeYl67N/rN1Aso2uOObksOmTSnwzvjpizFA4IK4CkHdco77Zi8tDPyJnRprvGGpD0W1lg5ndqMG16dlNUOiiZkFRWlEgfpq9lorlTCXUMCLeYUEgC/fbepupC9RhypWpHxJV7CSrQ7bJ9Pid+Jokx5LqgoSBvUm+DCyhPbjSYDPrivrbpKrz1bPZP1/trKI6xZ8Q/jD2AukeSMMfJ/AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA2LTA3VDA5OjA5OjExKzAwOjAwIUUsnAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNi0wN1QwOTowOToxMSswMDowMFAYlCAAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDYtMDdUMDk6MDk6MjArMDA6MDAv9bmoAAAAAElFTkSuQmCC",
+                            "png_base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAACYktHRAD/h4/MvwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gGBwkJFOCdqu0AAAH5SURBVEjHxdVPSBRhGMfxz65jEJYG2haFVJQQ5KGCIiqITl26RHWQpEsJ/QFFwkuQRJc6dOnSoWNkRnSoU5cuHrI/XiMqlQI7FOuGmrAq604HIXdnZ3b3VM97mXmfZ748v9887wz/O1J17oX1ArYZ0BpTN+mebBwgiNx3uixnpgwc2my9HfpM15Z00oIrWmVK1kYPhEJDcb0FMZBZuchO3i+vnEVvNBcHSMXsLLpl0kAlIg4Qb/a8QVwT6itF1Ato1CHwxE7nhPpX7awPUNDqqYJQI7p9cyMJkIoFDFvQKCWNJl12SSvGAwpYrgCMGft7vdFxJZOZrijtM1JVTrq8y9IOjjohtOxSgpCUKQ+jpyIoSfc4X8PMrJHoOJcCAoSy5q3T5ocGzeZk/JS1wVZpKQ1RZqWJ13221gWPLLrquYsGrbHbTS1xTVXOwbQeH70wI+e9rJe2uG1RU5Kn0QgNGbVfkwPeYl67N/rN1Aso2uOObksOmTSnwzvjpizFA4IK4CkHdco77Zi8tDPyJnRprvGGpD0W1lg5ndqMG16dlNUOiiZkFRWlEgfpq9lorlTCXUMCLeYUEgC/fbepupC9RhypWpHxJV7CSrQ7bJ9Pid+Jokx5LqgoSBvUm+DCyhPbjSYDPrivrbpKrz1bPZP1/trKI6xZ8Q/jD2AukeSMMfJ/AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDI0LTA2LTA3VDA5OjA5OjExKzAwOjAwIUUsnAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyNC0wNi0wN1QwOTowOToxMSswMDowMFAYlCAAAAAodEVYdGRhdGU6dGltZXN0YW1wADIwMjQtMDYtMDdUMDk6MDk6MjArMDA6MDAv9bmoAAAAAElFTkSuQmCC",
                             "type": "BASE64_IMAGE"
                         },
                         "position": {

@@ -117,9 +117,12 @@ struct OptionsView: View {
                     }
                     .tint(.a1)
                     ResetButton()
+
+                    #if DEBUG
                     NavigationLink(value: Destination.infrared) {
                         Text("Infrared Layout")
                     }
+                    #endif
                 }
             }
 
