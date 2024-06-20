@@ -28,6 +28,7 @@ struct OptionsView: View {
         case logs
         case fileManager
         case reportBug
+        case infrared
     }
 
     var body: some View {
@@ -116,6 +117,9 @@ struct OptionsView: View {
                     }
                     .tint(.a1)
                     ResetButton()
+                    NavigationLink(value: Destination.infrared) {
+                        Text("Infrared Layout")
+                    }
                 }
             }
 
@@ -156,6 +160,7 @@ struct OptionsView: View {
             case .logs: LogsView()
             case .fileManager: FileManagerView()
             case .reportBug: ReportBugView()
+            case .infrared: InfraredLayoutView()
             }
         }
     }
